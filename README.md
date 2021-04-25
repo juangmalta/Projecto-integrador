@@ -1,2 +1,2 @@
 # Projecto-integrador
-Projecto integradosr de clase POO 
+Projecto integrador de clase POO 
