@@ -22,7 +22,7 @@ public:
 	int getNumero();
 	string getNacimiento();
 	string getSexo();
-
+	
 
 };
 
