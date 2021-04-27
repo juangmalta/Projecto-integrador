@@ -14,6 +14,16 @@ protected:
 	string nacimiento;
 	string sexo;
 
+public:
+	Persona();
+	Persona(string, string, int, string,string);
+	string getNombre();
+	string getDireccion();
+	int getNumero();
+	string getNacimiento();
+	string getSexo();
+
+
 };
 
 #endif
