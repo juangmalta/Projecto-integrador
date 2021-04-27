@@ -4,7 +4,16 @@
 class Almacen
 {
 protected:
-
+ProductoAlmacen productos [20];//Donde se guardan los productos aunque no siempre este lleno
+int size; //Para ver cuantos productos se han cargado (estan disponibles)
+public:
+  Almacen();
+  Almacen(int _size);
+  int getSize();
+  void setSize();
+  void agregarProducto(Almacen);
+  void print()
 }
+
 
 #endif
