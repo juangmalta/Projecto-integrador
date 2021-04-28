@@ -5,7 +5,7 @@
 
 class Cliente:public Persona
 {
-private:
+protected:
   string rfc;
 public:
   Cliente();

@@ -9,11 +9,11 @@ Persona::Persona(){
 }
 
 Persona::Persona(string name,string direc, int num, string nac, string sex){
-  this->nombre=name;
-  this->direccion=direc;
-  this->numero=num;
-  this->nacimiento=nac;
-  this->sexo=sex;
+  nombre=name;
+  direccion=direc;
+  numero=num;
+  nacimiento=nac;
+  sexo=sex;
 }
 
 string Persona::getNombre(){
