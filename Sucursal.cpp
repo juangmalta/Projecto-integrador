@@ -93,6 +93,8 @@ void Sucursal::imprimir(){
         cout << this->listaCliente[i].getNombre() << ", " << this->listaCliente[i].getNumero()<<", "<<this->listaCliente[i].getDireccion()<<", "<<this->listaCliente[i].getNacimiento()<<", "<<this->listaCliente[i].getSexo()<<", "<<this->listaCliente[i].getRfc()<<endl;
 
 }
+
+cout<<"Lista de empleados"<<endl;
 for (j=0; j<this->dimensionEmpleados; j++){
     cout << this->listaEmpleados[j].getNombre() << ", " << this->listaEmpleados[j].getNumero()<<", "<<this->listaEmpleados[j].getDireccion()<<", "<<this->listaEmpleados[j].getNacimiento()<<", "<<this->listaEmpleados[j].getSexo()<<", "<<this->listaEmpleados[j].getCargo()<<endl;
 
