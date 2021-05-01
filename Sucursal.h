@@ -11,6 +11,8 @@ protected:
    int dimensionEmpleados;
    Cliente *listaCliente;
    int dimensionClientes;
+   int sizeC;
+   int sizeE;
 public:
   Sucursal();
   Sucursal(int,int);
@@ -18,9 +20,8 @@ public:
   int tC();
   int tE();
   void eliminarSucursal();
-  void modificarSucursal();
-  void agregarEmpleado();
-  void agregarCliente();
+  void agregarEmpleado(Empleado);
+  void agregarCliente(Cliente);
   void imprimir();
 
 };
