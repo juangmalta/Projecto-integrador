@@ -3,7 +3,7 @@
 #include <string>
 #include "Empleado.h"
 #include "Cliente.h"
-
+#include <iostream>
 class Sucursal
 {
 protected:
@@ -14,11 +14,13 @@ protected:
 public:
   Sucursal();
   Sucursal(int,int);
-  Sucursal(int,Empleado *,int,Cliente*);
-  eliminarSucursal();
-  modificarSucursal();
-  agregarEmpleado();
-  agregarCliente();
+  Sucursal(int ,Empleado *, int,Cliente *);
+  int tC();
+  int tE();
+  void eliminarSucursal();
+  void modificarSucursal();
+  void agregarEmpleado();
+  void agregarCliente();
   void imprimir();
 
 };
