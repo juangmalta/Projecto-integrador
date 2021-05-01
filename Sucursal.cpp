@@ -32,6 +32,16 @@ int Sucursal::tE(){
   return dimensionEmpleados;
 }
 
+void Sucursal:: eliminarSucursal(){
+  listaCliente= new Cliente[1];
+  listaEmpleados=new Empleado[1];
+  dimensionClientes=0;
+  dimensionEmpleados=0;
+cout<<"Esta sucursal ha sido eliminada"<<endl;
+}
+
+
+
 void Sucursal::imprimir(){
 
 	cout << "Lista de clientes"<<endl;
