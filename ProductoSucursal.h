@@ -1,6 +1,8 @@
-#define PRODUCTOSUCURSAL_H_INCLUDED
-#ifndef PRODUCTOSUCURSAL_H_INCLUDED
+#ifndef PRODUCTOSUCURSAL_H
+#define PRODUCTOSUCURSAL_H
 #include <string>
+
+using namespace std;
 
 class ProductoSucursal
 {
@@ -23,7 +25,7 @@ public:
   int getExistencias(int);
   double getPeso();
   double getTamano();
-  void imprime();
-}
+  void imprime(int);
+};
 
 #endif
