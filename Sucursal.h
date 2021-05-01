@@ -3,7 +3,7 @@
 #include <string>
 #include "Empleado.h"
 #include "Cliente.h"
-
+#include <iostream>
 class Sucursal
 {
 protected:
@@ -11,14 +11,17 @@ protected:
    int dimensionEmpleados;
    Cliente *listaCliente;
    int dimensionClientes;
+   int sizeC;
+   int sizeE;
 public:
   Sucursal();
   Sucursal(int,int);
-  Sucursal(int,Empleado *,int,Cliente*);
-  eliminarSucursal();
-  modificarSucursal();
-  agregarEmpleado();
-  agregarCliente();
+  Sucursal(int ,Empleado *, int,Cliente *);
+  int tC();
+  int tE();
+  void eliminarSucursal();
+  void agregarEmpleado(Empleado);
+  void agregarCliente(Cliente);
   void imprimir();
 
 };
