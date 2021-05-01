@@ -2,7 +2,7 @@
 #ifndef ALMACENSUCURSAL_H_INCLUDED
 #include <string>
 
-class almacenSucursal
+class AlmacenSucursal
 {
 protected:
   int masProducto;

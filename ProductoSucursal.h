@@ -9,11 +9,13 @@ private:
   string NombreProducto;
   int PrecioCompra;
   int PrecioVenta;
-  int Existencias[];
+  int *Existencias;
   double Peso;
   double Tamano;
 
 public:
+  ProductoSucursal();
+  ProductoSucursal(int, string, int, int, int *, double, double);
   int getCodigoProducto();
   string getNombreProducto();
   int getPrecioCompra();
@@ -23,8 +25,5 @@ public:
   double getTamano();
   void imprime();
 }
-
-
-
 
 #endif
