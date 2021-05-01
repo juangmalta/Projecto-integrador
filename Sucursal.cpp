@@ -9,24 +9,27 @@ Sucursal::Sucursal(){
   dimensionEmpleados=1;
   sizeC=1;
   sizeE=1;
+  identificador=0;
 }
 
-Sucursal::Sucursal(int tc, int te){
+Sucursal::Sucursal(int tc, int te,int id){
   listaCliente= new Cliente[1];
   listaEmpleados=new Empleado[1];
   dimensionClientes=tc;
   dimensionEmpleados=te;
   sizeC=tc;
   sizeE=te;
+  identificador=id;
 }
 
-Sucursal::Sucursal(int te,Empleado * arrEmpleado, int tc, Cliente * arrCliente){
+Sucursal::Sucursal(int te,Empleado * arrEmpleado, int tc, Cliente * arrCliente,int id){
   listaCliente= arrCliente;
   listaEmpleados=arrEmpleado;
   dimensionClientes=tc;
   dimensionEmpleados=te;
   sizeC=tc;
   sizeE=te;
+  identificador=id;
 }
 
 
@@ -84,7 +87,7 @@ void Sucursal::agregarEmpleado(Empleado obj){
   }
 }
 
-void Sucursal::imprimir(){
+void Sucursal::imprimirClientes(){
 
 	cout << "Lista de clientes"<<endl;
     int i;

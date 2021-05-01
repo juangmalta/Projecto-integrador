@@ -11,6 +11,7 @@ public:
   Empleado();
   Empleado(string,string,int,string,string,string);
   string getCargo();
+  void imprimir();
 };
 
 #endif

@@ -13,17 +13,18 @@ protected:
    int dimensionClientes;
    int sizeC;
    int sizeE;
+   int identificador;
 public:
   Sucursal();
-  Sucursal(int,int);
-  Sucursal(int ,Empleado *, int,Cliente *);
+  Sucursal(int,int,int);
+  Sucursal(int ,Empleado *, int,Cliente *,int);
   int tC();
   int tE();
   void eliminarSucursal();
   void agregarEmpleado(Empleado);
   void agregarCliente(Cliente);
-  void imprimir();
-
+  void imprimirClientes();
+  void imprimirEmpleados();
 };
 
 #endif
