@@ -59,7 +59,5 @@ void ProductoSucursal::imprime(int i){
 	cout<<"Precio de venta: "<<this->PrecioVenta<<endl;
 	cout<<"Existencias: "<<this->Existencias[i]<<endl;
 	cout<<"Peso: "<<this->Peso<<endl;
-	cout<<"Tamaño: "<<this->Tamano<<endl;
+	cout<<"TamaÃ±o: "<<this->Tamano<<endl;
 }
-
-
