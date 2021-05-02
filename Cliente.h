@@ -11,6 +11,7 @@ public:
   Cliente();
   Cliente(string,string,int,string,string,string);
   string getRfc();
+  void imprimir();
 };
 
 #endif

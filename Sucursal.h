@@ -23,6 +23,8 @@ public:
   void eliminarSucursal();
   void agregarEmpleado(Empleado);
   void agregarCliente(Cliente);
+  void eliminarEmpleado(int);
+  void transeferirEmpleado(int,Empleado,Sucursal);
   void imprimirClientes();
   void imprimirEmpleados();
 };

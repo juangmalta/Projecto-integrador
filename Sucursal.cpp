@@ -87,20 +87,31 @@ void Sucursal::agregarEmpleado(Empleado obj){
   }
 }
 
+void Sucursal::eliminarEmpleado(int indice){
+  this->listaEmpleados[indice]=Empleado();
+}
+
+void Sucursal::transeferirEmpleado(int ind,Empleado emp,Sucursal suc){
+  eliminarEmpleado(ind);
+  suc.agregarEmpleado(emp);
+  cout<<"Empleado transferido"<<endl;
+}
 void Sucursal::imprimirClientes(){
 
 	cout << "Lista de clientes"<<endl;
     int i;
-    int j;
     for (i=0; i<this->dimensionClientes; i++){
-        cout << this->listaCliente[i].getNombre() << ", " << this->listaCliente[i].getNumero()<<", "<<this->listaCliente[i].getDireccion()<<", "<<this->listaCliente[i].getNacimiento()<<", "<<this->listaCliente[i].getSexo()<<", "<<this->listaCliente[i].getRfc()<<endl;
+      this->listaCliente[i].imprimir();
 
 }
-
-cout<<"Lista de empleados"<<endl;
-for (j=0; j<this->dimensionEmpleados; j++){
-    cout << this->listaEmpleados[j].getNombre() << ", " << this->listaEmpleados[j].getNumero()<<", "<<this->listaEmpleados[j].getDireccion()<<", "<<this->listaEmpleados[j].getNacimiento()<<", "<<this->listaEmpleados[j].getSexo()<<", "<<this->listaEmpleados[j].getCargo()<<endl;
-
 }
 
+void Sucursal::imprimirEmpleados(){
+
+	cout << "Lista de empleados"<<endl;
+    int i;
+    for (i=0; i<this->dimensionEmpleados; i++){
+      this->listaEmpleados[i].imprimir();
+
+}
 }

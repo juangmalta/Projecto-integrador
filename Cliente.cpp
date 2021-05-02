@@ -1,4 +1,5 @@
 #include "Cliente.h"
+#include <iostream>
 
 Cliente::Cliente(){
   rfc=" ";
@@ -10,4 +11,7 @@ Cliente::Cliente(string name,string direc, int num, string nac, string sex,strin
 
 string Cliente::getRfc(){
   return rfc;
+}
+void Cliente::imprimir(){
+      cout<<nombre<<" "<<direccion<<" "<<numero<<" "<<nacimiento<<" "<<sexo<<" "<<rfc<<endl;
 }

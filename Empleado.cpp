@@ -12,6 +12,6 @@ string Empleado::getCargo(){
   return cargo;
 }
 
-void imprimir(){
-      cout<<this->nombre<<" "<<direccion<<" "<<numero<<" "<<nacimiento<<" "<<sexo<<" "<<cargo<<endl;
+void Empleado::imprimir(){
+      cout<<nombre<<" "<<direccion<<" "<<numero<<" "<<nacimiento<<" "<<sexo<<" "<<cargo<<endl;
 }
