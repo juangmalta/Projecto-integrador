@@ -10,6 +10,7 @@ Sucursal::Sucursal(){
   sizeC=1;
   sizeE=1;
   identificador=0;
+  almacen=AlmacenSucursal();
 }
 
 Sucursal::Sucursal(int tc, int te,int id){
@@ -20,9 +21,10 @@ Sucursal::Sucursal(int tc, int te,int id){
   sizeC=tc;
   sizeE=te;
   identificador=id;
+  almacen=AlmacenSucursal();
 }
 
-Sucursal::Sucursal(int te,Empleado * arrEmpleado, int tc, Cliente * arrCliente,int id){
+Sucursal::Sucursal(int te,Empleado * arrEmpleado, int tc, Cliente * arrCliente,int id,AlmacenSucursal alma){
   listaCliente= arrCliente;
   listaEmpleados=arrEmpleado;
   dimensionClientes=tc;
@@ -30,6 +32,7 @@ Sucursal::Sucursal(int te,Empleado * arrEmpleado, int tc, Cliente * arrCliente,i
   sizeC=tc;
   sizeE=te;
   identificador=id;
+  almacen=alma;
 }
 
 
@@ -116,4 +119,8 @@ cout<<"Sucursal numero "<<identificador<<endl;
       this->listaEmpleados[i].imprimir();
 
 }
+
+}
+AlmacenSucursal Sucursal::getAlmacen(){
+  return almacen;
 }
