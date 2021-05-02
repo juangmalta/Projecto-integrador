@@ -22,7 +22,12 @@ public:
 	int getNumero();
 	string getNacimiento();
 	string getSexo();
-	
+	void setNombre(string);
+	void setDireccion(string);
+	void setNumero(int);
+	void setNacimiento(string);
+	void setSexo(string);
+
 
 };
 

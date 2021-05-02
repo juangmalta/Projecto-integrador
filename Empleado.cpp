@@ -15,3 +15,7 @@ string Empleado::getCargo(){
 void Empleado::imprimir(){
       cout<<nombre<<" "<<direccion<<" "<<numero<<" "<<nacimiento<<" "<<sexo<<" "<<cargo<<endl;
 }
+
+void Empleado::setCargo(string carg){
+  cargo=carg;
+}

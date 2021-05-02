@@ -31,3 +31,20 @@ string Persona::getNacimiento(){
 string Persona::getSexo(){
   return sexo;
 }
+
+
+void Persona::setNombre(string name){
+  nombre=name;
+}
+void Persona::setDireccion(string dir){
+  direccion=dir;
+}
+void Persona::setNumero(int numb){
+  numero=numb;
+}
+void Persona::setNacimiento(string nac){
+  nacimiento=nac;
+}
+void Persona::setSexo(string sex){
+  sexo=sex;
+}
