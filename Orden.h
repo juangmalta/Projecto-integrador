@@ -3,14 +3,17 @@
 
 #include"Empleado.h"
 #include"Cliente.h"
+#include "ProductoSucursal.h"
 
 class Orden{
 
 protected:
-
+ProductoSucursal *arrprod;
 
 
 private:
+    //Orden();
+    //Orden(ProductoSucursal *);
     void print();
 
 };
