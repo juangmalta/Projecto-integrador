@@ -22,6 +22,8 @@ ProductoOrden::ProductoOrden(int _codprod,string _nomprod,int _precCompra,int _p
     tamañoEmpaque=_tamañoEmpaque;
 }
 
-string ProductoOrden::getCliente(){
-    
+string ProductoOrden::getCliente(Cliente cl1)
+{
+    cl1.imprimir();
+
 }
