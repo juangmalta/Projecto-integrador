@@ -12,6 +12,10 @@ Cliente::Cliente(string name,string direc, int num, string nac, string sex,strin
 string Cliente::getRfc(){
   return rfc;
 }
+
+void Cliente::setRfc(string rf){
+  rfc=rf;
+}
 void Cliente::imprimir(){
       cout<<nombre<<" "<<direccion<<" "<<numero<<" "<<nacimiento<<" "<<sexo<<" "<<rfc<<endl;
 }
