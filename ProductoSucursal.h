@@ -1,31 +1,30 @@
-#ifndef PRODUCTOSUCURSAL_H
-#define PRODUCTOSUCURSAL_H
+#ifndef ProductoSucursal_h
+#define ProductoSucursal_h
 #include <string>
-
 using namespace std;
 
-class ProductoSucursal
-{
-private:
-  int CodigoProducto;
-  string NombreProducto;
-  int PrecioCompra;
-  int PrecioVenta;
-  int *Existencias;
-  double Peso;
-  double Tamano;
-
+class ProductoSucursal {
+protected:
+    int codprod;
+    string nombrprod;
+    int precio;
+    int precCompra;
+    int precVenta;
+    int existencia;
+    double peso;
+    double tamañoEmpaque;
 public:
-  ProductoSucursal();
-  ProductoSucursal(int, string, int, int, int *, double, double);
-  int getCodigoProducto();
-  string getNombreProducto();
-  int getPrecioCompra();
-  int getPrecioVenta();
-  int getExistencias(int);
-  double getPeso();
-  double getTamano();
-  void imprime(int);
+	ProductoSucursal(int, string, int, int, int, int, double, double);
+    int getCodigoProducto();
+    int getNombreProducto();
+    int getPrecioCompra();
+    int getPrecioVenta();
+    int getExistencia();
+    double getPeso();
+    double getTamaño();
+    void imprimir();
+		
 };
+
 
 #endif
