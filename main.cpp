@@ -3,6 +3,7 @@
 #include "Cliente.h"
 #include "Empleado.h"
 #include "Sucursal.h"
+#include "ProductoSucursal.h"
 using namespace std;
 
 int main(){
@@ -39,6 +40,10 @@ suc2.imprimirEmpleados();
 suc1.eliminarSucursal();
 suc1.imprimirClientes();
 suc1.imprimirEmpleados();
+int arr[5]={0,0,0,0,0};
+ProductoSucursal p1(14,"Leche",32,45,arr,3.4,1.1);
+p1.imprime(4);
+
 
   return 0;
 }
