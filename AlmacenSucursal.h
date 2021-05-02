@@ -1,7 +1,7 @@
 #ifndef ALMACENSUCURSAL_H
 #define ALMACENSUCURSAL_H
 
-#include "ProductoSucursal.h"
+#include "ProductoSucursal.cpp"
 
 using namespace std;
 
@@ -9,7 +9,7 @@ class AlmacenSucursal
 {
 	private:
 		int numSucursal;
-		int *productosRegistrados;
+		int *productosRegistrados;	
 		ProductoSucursal * listaProductos;
 	public:
 		AlmacenSucursal();
