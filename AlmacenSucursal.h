@@ -1,22 +1,23 @@
-#define ALMACENSUCURSAL_H_INCLUDED
-#ifndef ALMACENSUCURSAL_H_INCLUDED
-#include <string>
+#ifndef ALMACENSUCURSAL_H
+#define ALMACENSUCURSAL_H
+
+#include "ProductoSucursal.cpp"
+
+using namespace std;
 
 class AlmacenSucursal
 {
-protected:
-  int masProducto;
-  string modificarProducto; //Todo esto puede cambiarse de acuerdo a lo que diga el encargado
-  int eliminarProducto;
-  int editarProducto;
-public:
-  getMasProducto();
-  getModificarProducto();
-  getEliminarProducto();
-  getEditarProducto();
-}
-
-
-
+	private:
+		int numSucursal;
+		int *productosRegistrados;	
+		ProductoSucursal * listaProductos;
+	public:
+		AlmacenSucursal();
+	    AlmacenSucursal(int, int *, ProductoSucursal *);
+	    void mostrarProductos();
+	    void addExistencias(int, int);
+	    void elinminarExistencias(int, int);
+	    void eliminarProducto(int);
+};
 
 #endif

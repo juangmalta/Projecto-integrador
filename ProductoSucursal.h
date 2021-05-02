@@ -23,6 +23,7 @@ public:
   int getPrecioCompra();
   int getPrecioVenta();
   int getExistencias(int);
+  void setExistencias(int, int);
   double getPeso();
   double getTamano();
   void imprime(int);
