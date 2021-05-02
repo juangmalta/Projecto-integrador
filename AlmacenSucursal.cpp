@@ -73,7 +73,9 @@ void AlmacenSucursal::eliminarProducto(int productoNum){
 	//this->productosRegistrados = ptr;
 }
 
-
+void AlmacenSucursal::modificarProducto(int num, int codPro, string nombre, int compra, int venta, int * cantidad, double pes, double tam){
+	this->listaProductos[num].modificarProducto(codPro, nombre, compra, venta, cantidad, pes, tam);
+}
 
 
 

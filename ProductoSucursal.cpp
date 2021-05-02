@@ -70,4 +70,13 @@ void ProductoSucursal::imprime(int i){
 	cout<<"Tamaño: "<<this->Tamano<<endl;
 }
 
+void ProductoSucursal::modificarProducto(int codPro, string nombre, int compra, int venta, int * cantidad, double pes, double tam){
+	this->CodigoProducto = codPro;
+	this->NombreProducto = nombre;
+	this->PrecioCompra = compra;
+	this->PrecioVenta = venta;
+	this->Existencias = cantidad;
+	this->Peso = pes;
+	this->Tamano = tam;
+}
 

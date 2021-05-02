@@ -18,6 +18,7 @@ class AlmacenSucursal
 	    void addExistencias(int, int);
 	    void elinminarExistencias(int, int);
 	    void eliminarProducto(int);
+	    void modificarProducto(int, int, string, int, int, int *, double, double);
 };
 
 #endif

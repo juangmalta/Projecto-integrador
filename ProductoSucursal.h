@@ -27,6 +27,7 @@ public:
   double getPeso();
   double getTamano();
   void imprime(int);
+  void modificarProducto(int, string, int, int, int *, double, double);
 };
 
 #endif
