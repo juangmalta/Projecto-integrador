@@ -44,6 +44,14 @@ int ProductoSucursal::getExistencias(int i){
 	return this->Existencias[i];
 }
 
+void ProductoSucursal::setExistencias(int i, int cant){
+	if((this->Existencias[i]+cant)<0){
+		cout<<"No hay suficientes existencias"<<endl;
+	} else{
+		this->Existencias[i] = this->Existencias[i] + cant;
+	}
+}
+
 double ProductoSucursal::getPeso(){
 	return this->Peso;
 }
@@ -59,5 +67,7 @@ void ProductoSucursal::imprime(int i){
 	cout<<"Precio de venta: "<<this->PrecioVenta<<endl;
 	cout<<"Existencias: "<<this->Existencias[i]<<endl;
 	cout<<"Peso: "<<this->Peso<<endl;
-	cout<<"TamaÃ±o: "<<this->Tamano<<endl;
+	cout<<"Tamaño: "<<this->Tamano<<endl;
 }
+
+

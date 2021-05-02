@@ -10,6 +10,7 @@ Sucursal::Sucursal(){
   sizeC=1;
   sizeE=1;
   identificador=0;
+  almacen=AlmacenSucursal();
 }
 
 Sucursal::Sucursal(int tc, int te,int id){
@@ -20,9 +21,10 @@ Sucursal::Sucursal(int tc, int te,int id){
   sizeC=tc;
   sizeE=te;
   identificador=id;
+  almacen=AlmacenSucursal();
 }
 
-Sucursal::Sucursal(int te,Empleado * arrEmpleado, int tc, Cliente * arrCliente,int id){
+Sucursal::Sucursal(int te,Empleado * arrEmpleado, int tc, Cliente * arrCliente,int id,AlmacenSucursal alma){
   listaCliente= arrCliente;
   listaEmpleados=arrEmpleado;
   dimensionClientes=tc;
@@ -30,6 +32,7 @@ Sucursal::Sucursal(int te,Empleado * arrEmpleado, int tc, Cliente * arrCliente,i
   sizeC=tc;
   sizeE=te;
   identificador=id;
+  almacen=alma;
 }
 
 
@@ -90,14 +93,16 @@ void Sucursal::agregarEmpleado(Empleado obj){
 void Sucursal::eliminarEmpleado(int indice){
   this->listaEmpleados[indice]=Empleado();
 }
-
+void Sucursal::eliminarCliente(int indice){
+  this->listaCliente[indice]=Cliente();
+}
 void Sucursal::transeferirEmpleado(int ind,Empleado emp,Sucursal suc){
   eliminarEmpleado(ind);
   suc.agregarEmpleado(emp);
   cout<<"Empleado transferido"<<endl;
 }
 void Sucursal::imprimirClientes(){
-
+cout<<"Sucursal numero "<<identificador<<endl;
 	cout << "Lista de clientes"<<endl;
     int i;
     for (i=0; i<this->dimensionClientes; i++){
@@ -107,7 +112,7 @@ void Sucursal::imprimirClientes(){
 }
 
 void Sucursal::imprimirEmpleados(){
-
+cout<<"Sucursal numero "<<identificador<<endl;
 	cout << "Lista de empleados"<<endl;
     int i;
     for (i=0; i<this->dimensionEmpleados; i++){
