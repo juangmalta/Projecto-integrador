@@ -30,6 +30,7 @@ public:
   void transeferirEmpleado(int,Empleado,Sucursal);
   void imprimirClientes();
   void imprimirEmpleados();
+  AlmacenSucursal getAlmacen();
 };
 
 #endif

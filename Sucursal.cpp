@@ -119,4 +119,8 @@ cout<<"Sucursal numero "<<identificador<<endl;
       this->listaEmpleados[i].imprimir();
 
 }
+
+}
+AlmacenSucursal Sucursal::getAlmacen(){
+  return almacen;
 }

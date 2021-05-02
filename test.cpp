@@ -4,6 +4,7 @@
 #include "Empleado.h"
 #include "Sucursal.h"
 #include "ProductoSucursal.h"
+#include "AlmacenSucursal.h"
 using namespace std;
 
 int main(){
@@ -61,6 +62,13 @@ int main(){
   suc1.imprimirClientes();
   suc2.eliminarCliente(1);
   suc2.imprimirClientes();
+
+  suc1.getAlmacen().mostrarProductos();
+  suc1.getAlmacen().addExistencias(1,11);
+  suc1.getAlmacen().elinminarExistencias(2,6);
+
+suc1.getAlmacen().mostrarProductos();
+
 
 
 
