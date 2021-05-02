@@ -3,6 +3,7 @@
 #include <string>
 using namespace std;
 #include "Orden.h"
+#include "Cliente.h"
 
 class ProductoOrden:public Orden
 {
@@ -18,7 +19,7 @@ protected:
 private:
     ProductoOrden();
     ProductoOrden(int,string,int,int,int,int,int);
-    string getCliente();
+    string getCliente(Cliente);
 
 };
 
