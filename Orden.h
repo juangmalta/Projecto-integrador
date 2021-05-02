@@ -9,11 +9,15 @@ class Orden{
 
 protected:
 ProductoSucursal *arrprod;
+Empleado empleado;
+Cliente cliente;
+int size;
 
-
-private:
-    //Orden();
+public:
+    Orden();
+    Orden(int, ProductoSucursal*, Cliente, Empleado);
     //Orden(ProductoSucursal *);
+    void mostrarProductos();
     void print();
 
 };

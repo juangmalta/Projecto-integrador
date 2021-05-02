@@ -3,6 +3,7 @@
 
 #include "Persona.h"
 
+
 class Cliente:public Persona
 {
 protected:
@@ -13,7 +14,7 @@ public:
   string getRfc();
   void setRfc(string);
   void imprimir();
-  
+
 };
 
 #endif
