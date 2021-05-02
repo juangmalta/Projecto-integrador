@@ -18,8 +18,7 @@ protected:
 private:
     ProductoOrden();
     ProductoOrden(int,string,int,int,int,int,int);
-
-
+    string getCliente();
 
 };
 
