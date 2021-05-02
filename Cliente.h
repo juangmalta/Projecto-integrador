@@ -13,6 +13,7 @@ public:
   string getRfc();
   void setRfc(string);
   void imprimir();
+  
 };
 
 #endif

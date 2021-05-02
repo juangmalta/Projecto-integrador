@@ -90,14 +90,16 @@ void Sucursal::agregarEmpleado(Empleado obj){
 void Sucursal::eliminarEmpleado(int indice){
   this->listaEmpleados[indice]=Empleado();
 }
-
+void Sucursal::eliminarCliente(int indice){
+  this->listaCliente[indice]=Cliente();
+}
 void Sucursal::transeferirEmpleado(int ind,Empleado emp,Sucursal suc){
   eliminarEmpleado(ind);
   suc.agregarEmpleado(emp);
   cout<<"Empleado transferido"<<endl;
 }
 void Sucursal::imprimirClientes(){
-
+cout<<"Sucursal numero "<<identificador<<endl;
 	cout << "Lista de clientes"<<endl;
     int i;
     for (i=0; i<this->dimensionClientes; i++){
@@ -107,7 +109,7 @@ void Sucursal::imprimirClientes(){
 }
 
 void Sucursal::imprimirEmpleados(){
-
+cout<<"Sucursal numero "<<identificador<<endl;
 	cout << "Lista de empleados"<<endl;
     int i;
     for (i=0; i<this->dimensionEmpleados; i++){
